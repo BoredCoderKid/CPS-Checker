@@ -3,7 +3,8 @@
 Simple CPS-Tester to check your top speeds.
 
 ## Description
-An in-depth paragraph about your project and overview of use.
+Simple CPS tester because as my name applys i was bored and started coding.
+This program is meant to be downloaded once and deleted shortly afterwards.
 
 ## Dependencies
 * Python
