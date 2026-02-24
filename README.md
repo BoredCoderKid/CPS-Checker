@@ -2,27 +2,27 @@
 
 Simple CPS-Tester to check your top speeds.
 
-#Description
+## Description
 An in-depth paragraph about your project and overview of use.
 
-#Dependencies
-Python
+## Dependencies
+* Python
 
-#Installing
-Download Folder "CPS CHECKER"
+## Installing
+1. Download the folder **"CPS CHECKER"**.
+2. **Note:** The folder **MUST** be named `CPS CHECKER` for the program to function correctly.
 
-#Modifications Needed
-Folder NEEDS to be named "CPS CHECKER"
+---
 
-#How to run the program
-Run it in python .pyw file
+## How to run the program
+Run the program using the `.pyw` Python file.
 
-#Version History
-V0.1, Release of Product.
+## Version History
+* **V0.1**: Initial release of the product.
 
-#License
-This project is licensed under the [MID] License - see the LICENSE.md file for details
+## License
+This project is licensed under the [MIT License](LICENSE.md) — see the [LICENSE.md](LICENSE.md) file for details.
 
-#Acknowledgments
-I simply wanted to make
-@DomPizzie for the simple template!
+## Acknowledgments
+* I simply wanted to make a simple CPS checker.
+* Thanks to [@DomPizzie](https://github.com) for the simple template!
