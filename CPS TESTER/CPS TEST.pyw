@@ -74,10 +74,9 @@ def reset_test():
     global clicks, is_running, test_duration
     final_cps=clicks/test_duration
     if test_duration<1:
-        text.configure(text="Clicks in under a second")
+        text.configure(text=f"Clicks in under a second: {final_cps:.2f}")
     elif test_duration==1:
-        text.configure(text="Clicks in a second")
-    text.config(text=f"Clicks per second: {final_cps:.2f}")
+        text.configure(text=f"Clicks in a second: {final_cps:.2f}")
     clicks=0
     is_running=False
     global img
@@ -112,7 +111,7 @@ texttimeset=None
 bool2=False
 def timechanger():
     global bool2,test_duration
-    test_duration=int(timechangerset.get())
+    test_duration=int(float(timechangerset.get()))
     if test_duration<1:
         text.configure(text="Clicks in under a second")
     elif test_duration==1:
