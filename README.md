@@ -20,6 +20,8 @@ for the program to function correctly.
 Run the program using the `.pyw` Python file.
 
 ## Version History
+* **V0.2**: New settings button
+*  which allows you to customize the test duration
 * **V0.1**: Initial release of the product.
 
 ## License
