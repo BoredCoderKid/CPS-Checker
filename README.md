@@ -10,7 +10,9 @@ An in-depth paragraph about your project and overview of use.
 
 ## Installing
 1. Download the folder **"CPS CHECKER"**.
-2. **Note:** The folder **MUST** be named `CPS CHECKER` for the program to function correctly.
+2. **Note:** The folder **MUST** be named `CPS CHECKER`,
+**EVERYTHING** below the folder must be named the same as it was when the folder was downloaded
+for the program to function correctly.
 
 ---
 
