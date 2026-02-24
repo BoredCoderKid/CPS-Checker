@@ -2,46 +2,27 @@
 
 Simple CPS-Tester to check your top speeds.
 
-Description
+#Description
 An in-depth paragraph about your project and overview of use.
 
-Getting Started
-Dependencies
-Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-ex. Windows 10
-Installing
-How/where to download your program
-Any modifications needed to be made to files/folders
-Executing program
-How to run the program
-Step-by-step bullets
-code blocks for commands
-Help
-Any advise for common problems or issues.
+#Dependencies
+Python
 
-command to run if program contains helper info
-Authors
-Contributors names and contact info
+#Installing
+Download Folder "CPS CHECKER"
 
-ex. Dominique Pizzie
-ex. @DomPizzie
+#Modifications Needed
+Folder NEEDS to be named "CPS CHECKER"
 
-Version History
-0.2
-Various bug fixes and optimizations
-See commit change or See release history
-0.1
-Initial Release
-License
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+#How to run the program
+Run it in python .pyw file
 
-Acknowledgments
-Inspiration, code snippets, etc.
+#Version History
+V0.1, Release of Product.
 
-awesome-readme
-PurpleBooth
-dbader
-zenorocha
-fvcproductions
+#License
+This project is licensed under the [MID] License - see the LICENSE.md file for details
 
+#Acknowledgments
+I simply wanted to make
 @DomPizzie for the simple template!
