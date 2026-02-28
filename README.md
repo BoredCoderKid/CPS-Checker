@@ -10,8 +10,6 @@ This program is meant to be downloaded once and deleted shortly afterwards.
 * Python
 
 ## Installing
-1. Download the folder **"CPS CHECKER"**.
-2. **Note:** The folder **MUST** be named `CPS CHECKER`,
 **EVERYTHING** below the folder must be named the same as it was when the folder was downloaded
 for the program to function correctly.
 
@@ -21,8 +19,9 @@ for the program to function correctly.
 Run the program using the `.pyw` Python file.
 
 ## Version History
-* **V0.3**: Small tweaks and fixed bugs
-* **V0.2**: New settings button which allows you to customize the test duration
+* **V0.4**: Dropped exactly 49 lines of code for optimization.
+* **V0.3**: Small tweaks and fixed bugs.
+* **V0.2**: New settings button which allows you to customize the test duration.
 * **V0.1**: Initial release of the product.
 
 ## License
