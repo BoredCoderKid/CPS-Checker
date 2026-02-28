@@ -1,64 +1,22 @@
-#im genuinely sorry for this code, i just wanted to make a simple cps test but it turned into this monstrosity. I know how to optimize it but im too lazy.
-#PLS download this, it took me 2 days (because im not a robot and kinda a noob) but in reality it took 1 day.
-#and i just noticed i could made the possible paths into a single list after i did all this, but again im too lazy to change it, sorry.
-#but if you want to optimize it be my guest:-)
+#V0.4 Big optimization to some parts of code.
 import tkinter as t
 from tkinter import ttk as tt
-import os
-home=os.path.expanduser("~")         
-username=os.getlogin()
-possible_icon_paths=[
-    os.path.join(home,"Documents","CPS TEST","mouse.png"),
-    os.path.join(home,"OneDrive","Documents","CPS TEST", "mouse.png"),
-    os.path.join(home,"Desktop","CPS TEST","mouse.png"),
-    os.path.join(home,"Downloads","CPS TEST","mouse.png"),
-    os.path.join(os.path.dirname(os.path.abspath(__file__)),"mouse.png")
-]
+from pathlib import Path as c
+
 root=t.Tk()
 root.geometry("400x400")
 root.title("CPS Test")
 root.configure(bg="#1A1818")
 root.resizable(False, False)
-for p in possible_icon_paths:
-    if os.path.exists(p):
-        root.wm_iconphoto(True, t.PhotoImage(file=p))
-        break
+
+path=c(__file__).parent
+img=t.PhotoImage(file=path/"buttonimagecps.png")
+img2=t.PhotoImage(file=path/"redbuttoncps.png")
+img3=t.PhotoImage(file=path/"GearCPS.png").subsample(2,2)
+icon=root.wm_iconphoto(False, t.PhotoImage(file=str(path/"mouse.png")))
 
 clicks=0
 is_running=False
-possible_paths=[
-    os.path.join(home,"Documents","CPS TEST","buttonimagecps.png"),
-    os.path.join(home,"OneDrive","Documents","CPS TEST", "buttonimagecps.png"),
-    os.path.join(home,"Desktop","CPS TEST","buttonimagecps.png"),
-    os.path.join(home,"Downloads","CPS TEST","buttonimagecps.png"),
-    os.path.join(os.path.dirname(os.path.abspath(__file__)),"buttonimagecps.png")
-]
-possible_paths2=[
-    os.path.join(home,"Documents","CPS TEST","redbuttoncps.png"),
-    os.path.join(home,"OneDrive","Documents","CPS TEST", "redbuttoncps.png"),
-    os.path.join(home,"Desktop","CPS TEST","redbuttoncps.png"),
-    os.path.join(home,"Downloads","CPS TEST","redbuttoncps.png"),
-    os.path.join(os.path.dirname(os.path.abspath(__file__)),"redbuttoncps.png")
-]
-possible_paths3=[
-    os.path.join(home,"Documents","CPS TEST","GearCPS.png"),
-    os.path.join(home,"OneDrive","Documents","CPS TEST", "GearCPS.png"),
-    os.path.join(home,"Desktop","CPS TEST","GearCPS.png"),
-    os.path.join(home,"Downloads","CPS TEST","GearCPS.png"),
-    os.path.join(os.path.dirname(os.path.abspath(__file__)),"GearCPS.png")
-]
-for p in possible_paths:
-    if os.path.exists(p):
-        img=t.PhotoImage(file=p)
-        break
-for p in possible_paths2:
-    if os.path.exists(p):
-        img2=t.PhotoImage(file=p)
-        break
-for p in possible_paths3:
-    if os.path.exists(p):
-        img3=t.PhotoImage(file=p).subsample(2,2)
-        break
 
 greyblock=t.Label(root,bg="#242424",width=50,height=25)
 greyblock.place(relx=0.5,rely=0.5,anchor="center")
@@ -120,7 +78,7 @@ def timechanger():
         text.configure(text="Clicks in a second")
     elif test_duration>1:
         text.configure(text="Clicks per second")
-    
+
 def opensettings():
     try:
         global bool2
@@ -142,7 +100,7 @@ click to continue",background="#FFFFFF",fg="#242424",justify="center",width=21,h
             texttimeset.destroy()
             bool2=False
     except Exception as e:
-        print("ERROR: ",e)
+        print("ERROR:",e)
 
 button=t.Button(root,image=img,bg="#242424",bd=0,command=start_test,highlightthickness=0,highlightbackground="#242424",padx=0, pady=0,relief="flat",activebackground="#242424")
 button.place(anchor="center", relx=0.5,rely=0.4)
