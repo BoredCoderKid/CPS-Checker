@@ -28,5 +28,4 @@ Run the program using the `.pyw` Python file.
 This project is licensed under the [MIT License](LICENSE.md) — see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
-* I simply wanted to make a simple CPS checker.
 * Thanks to [@DomPizzie](https://github.com) for the simple template!
