@@ -25,7 +25,7 @@ Run the program using the `.pyw` Python file.
 * **V0.1**: Initial release of the product.
 
 ## License
-This project is licensed under the [MIT License](LICENSE.md), see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [MIT License](LICENSE.md), see the [LICENSE.md]([LICENSE.md](https://github.com/BoredCoderKid/CPS-Checker/blob/main/LICENSE)) file for details.
 
 ## Acknowledgments
 * Thanks to [@DomPizzie](https://github.com) for the simple template!
