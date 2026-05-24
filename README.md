@@ -19,6 +19,7 @@ for the program to function correctly.
 Run the program using the `.pyw` Python file.
 
 ## Version History
+* **V0.5**: Made code extremely more readable for customization.
 * **V0.4**: Dropped exactly 49 lines of code for optimization.
 * **V0.3**: Small tweaks and fixed bugs.
 * **V0.2**: New settings button which allows you to customize the test duration.
